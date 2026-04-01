@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "payload": {
+    "kind": "update",
+    "status": "error",
+    "ts": 1774923314120,
+    "sessionKey": "agent:main:main",
+    "deliveryContext": {
+      "channel": "qqbot",
+      "to": "qqbot:c2c:DB0D276754D361B0256C70255C178BD8",
+      "accountId": "default"
+    },
+    "message": null,
+    "doctorHint": "Run: openclaw doctor --non-interactive",
+    "stats": {
+      "mode": "npm",
+      "root": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+      "before": {
+        "version": "2026.3.7"
+      },
+      "after": {
+        "version": "2026.3.7"
+      },
+      "steps": [
+        {
+          "name": "global update",
+          "command": "npm i -g openclaw@latest --no-fund --no-audit --loglevel=error",
+          "cwd": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+          "durationMs": 6774,
+          "log": {
+            "stdoutTail": null,
+            "stderrTail": "npm error code EBUSY\nnpm error syscall rename\nnpm error path C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\nnpm error dest C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\.openclaw-oHGnns6k\nnpm error errno -4082\nnpm error EBUSY: resource busy or locked, rename 'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw' -> 'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\.openclaw-oHGnns6k'\nnpm error A complete log of this run can be found in: C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_logs\\2026-03-31T02_15_01_401Z-debug-0.log",
+            "exitCode": 4294963214
+          }
+        },
+        {
+          "name": "global update (omit optional)",
+          "command": "npm i -g openclaw@latest --omit=optional --no-fund --no-audit --loglevel=error",
+          "cwd": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw",
+          "durationMs": 6073,
+          "log": {
+            "stdoutTail": null,
+            "stderrTail": "npm error code EBUSY\nnpm error syscall rename\nnpm error path C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\nnpm error dest C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\.openclaw-oHGnns6k\nnpm error errno -4082\nnpm error EBUSY: resource busy or locked, rename 'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw' -> 'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\.openclaw-oHGnns6k'\nnpm error A complete log of this run can be found in: C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_logs\\2026-03-31T02_15_08_179Z-debug-0.log",
+            "exitCode": 4294963214
+          }
+        }
+      ],
+      "reason": "global update (omit optional)",
+      "durationMs": 13123
+    }
+  }
+}

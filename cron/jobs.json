@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "a110232c-7481-4b4c-81d0-3e07d744c0b0",
+      "name": "股票分析推送_10AM",
+      "enabled": true,
+      "createdAtMs": 1774487572661,
+      "updatedAtMs": 1775009006704,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "分析股票并推送结果"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "qqbot",
+        "to": "qqbot:c2c:DB0D276754D361B0256C70255C178BD8"
+      },
+      "state": {
+        "nextRunAtMs": 1775095200000,
+        "lastRunAtMs": 1775008800027,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 206677,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "6b60b2da-99cd-4266-9ae8-d2679f0c47a3",
+      "name": "股票分析推送_2PM",
+      "enabled": true,
+      "createdAtMs": 1774487582036,
+      "updatedAtMs": 1775023481597,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "分析股票并推送结果"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "qqbot",
+        "to": "qqbot:c2c:DB0D276754D361B0256C70255C178BD8"
+      },
+      "state": {
+        "nextRunAtMs": 1775109600000,
+        "lastRunAtMs": 1775023200027,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 281570,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "dc18119e-e494-446d-a204-f8b3afadd8f1",
+      "name": "AI Builders Digest",
+      "enabled": true,
+      "createdAtMs": 1774575225183,
+      "updatedAtMs": 1775005294928,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "运行 follow-builders 技能生成今日 AI Builders 摘要并推送给用户。要求：(1) 不要回复HEARTBEAT_OK (2) 不要解释你是谁 (3) 直接输出推送消息 (4) 使用 emoji 和标题 (5) 控制在3000字以内"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "qqbot",
+        "to": "qqbot:c2c:DB0D276754D361B0256C70255C178BD8"
+      },
+      "state": {
+        "nextRunAtMs": 1775091600000,
+        "lastRunAtMs": 1775005200011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 94917,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2d0e87dc-dd3d-472d-aedb-bbae50ab3c82",
+      "name": "AI Builders Digest",
+      "enabled": true,
+      "createdAtMs": 1774575325509,
+      "updatedAtMs": 1775016131474,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "Asia/Shanghai",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the follow-builders skill: execute prepare-digest.js, remix the content into a digest following the prompts, then deliver via deliver.js"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1775102400000,
+        "lastRunAtMs": 1775016000023,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 131451,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}
